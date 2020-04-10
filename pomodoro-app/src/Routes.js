@@ -15,7 +15,7 @@ const Pages = createStackNavigator({
       }
     }  
   },
-  restTime: {
+  RestTime: {
     screen: RestTime,
     navigationOptions: {
       headerTitle: '',

@@ -3,7 +3,7 @@ import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 
 import CountDown from 'react-native-countdown-component';
 
-export default function Timer({ navigation, quantTimerSeconds}) {
+export default function Timer({ navigation, quantTimerSeconds, page}) {
   const [started, setStarted] = useState(false)
   const [idTimer, setIdTimer] = useState(1)
 
@@ -14,6 +14,7 @@ export default function Timer({ navigation, quantTimerSeconds}) {
         className='counter'
         until={Number(quantTimerSeconds)}
         size={60}
+        onFinish={() => navigation.navigate(page)}
         digitStyle={{backgroundColor: '#FF9F68'}}
         digitTxtStyle={{color: '#707070'}}
         separatorStyle={{color: '#FF9F68'}}

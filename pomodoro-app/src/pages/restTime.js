@@ -3,11 +3,11 @@ import { StyleSheet, View, Text } from 'react-native';
 
 import Timer from '../components/Timer';
 
-export default function RestTime() {
+export default function RestTime({ navigation }) {
   return(
     <View style={styles.container}>
       <Text style={styles.title}>Take a rest</Text>
-      <Timer quantTimerSeconds={300} />
+      <Timer navigation={navigation} quantTimerSeconds={300} page='main'/>
     </View>
   )
 }
