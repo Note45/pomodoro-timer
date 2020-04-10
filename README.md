@@ -14,7 +14,7 @@ The project is all constructed with React Native and the Expo toolchain.
 </p>
 
 # Future Implementations
-Aviso sonoro ao mudar de contagem de foco para contagem de descanso.
+Audible warning when changing from focus count to rest count.
 
 # License
 MIT License
