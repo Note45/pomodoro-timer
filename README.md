@@ -8,7 +8,13 @@ The Pomodoro Technique is a time management method developed by Francesco Cirill
 The project is all constructed with React Native and the Expo toolchain.
 
 # How the Project Is Currently
-In development...
+<p float='left'>
+  <img src='project-prints/total-focus-page.jpg' width='200'>
+  <img src='project-prints/take-rest-page.jpg' width='200'>
+</p>
+
+# Future Implementations
+Aviso sonoro ao mudar de contagem de foco para contagem de descanso.
 
 # License
 MIT License
