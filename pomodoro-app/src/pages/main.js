@@ -7,7 +7,7 @@ export default function Main({ navigation }) {
   return(
     <View style={styles.container}>
       <Text style={styles.title}>Total Focus</Text>
-      <Timer navigation={navigation} quantTimerSeconds={1500} page='RestTime'/>
+      <Timer navigation={navigation} quantTimerSeconds={1500} pageToReturn='RestTime'/>
     </View>
   )
 } 

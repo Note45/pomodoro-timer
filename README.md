@@ -2,7 +2,7 @@
 An application developed in React Native that helps in the implementation of Pomodoro time management technique.
 
 # Description
-The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s. The technique consists of using a stopwatch to divide the work into 25-minute periods, separated by brief intervals. This app helps in its implementation.
+The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s. The technique consists of using a stopwatch to divide the work into 25-minute periods, separated by brief intervals. This app helps in its implementation. The application starts with a countdown of 25 minutes of total focus, when it reaches the end it plays an audible warning and starts the countdown of 5 minutes of rest, thus changing the count during its use.
 
 # Technologies
 The project is all constructed with React Native and the Expo toolchain.
@@ -14,7 +14,7 @@ The project is all constructed with React Native and the Expo toolchain.
 </p>
 
 # Future Implementations
-Audible warning when changing from focus count to rest count.
+Show the countdown at notification bar.
 
 # License
 MIT License

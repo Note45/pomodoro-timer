@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
-
 import CountDown from 'react-native-countdown-component';
+import { Audio } from 'expo-av';
 
-export default function Timer({ navigation, quantTimerSeconds, page}) {
-  const [started, setStarted] = useState(false)
+export default function Timer({ navigation, quantTimerSeconds, pageToReturn}) {
+  const [started, setStarted] = useState(true)
   const [idTimer, setIdTimer] = useState(1)
 
   return(
@@ -14,7 +14,16 @@ export default function Timer({ navigation, quantTimerSeconds, page}) {
         className='counter'
         until={Number(quantTimerSeconds)}
         size={60}
-        onFinish={() => navigation.navigate(page)}
+        onFinish={async () => {
+          const soundObject = new Audio.Sound();
+          try {
+            await soundObject.loadAsync(require('../../assets/warningSound.mp3'));
+            await soundObject.playAsync();
+          } catch (error) {
+          }
+
+          navigation.navigate(pageToReturn)
+        }}
         digitStyle={{backgroundColor: '#FF9F68'}}
         digitTxtStyle={{color: '#707070'}}
         separatorStyle={{color: '#FF9F68'}}

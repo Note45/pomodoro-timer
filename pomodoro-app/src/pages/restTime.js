@@ -7,7 +7,7 @@ export default function RestTime({ navigation }) {
   return(
     <View style={styles.container}>
       <Text style={styles.title}>Take a rest</Text>
-      <Timer navigation={navigation} quantTimerSeconds={300} page='main'/>
+      <Timer navigation={navigation} quantTimerSeconds={300} pageToReturn='main'/>
     </View>
   )
 }
